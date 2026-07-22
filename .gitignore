@@ -1,0 +1,29 @@
+# Keil MDK / ARMCC
+DebugConfig/
+Listings/
+Objects/
+*.uvguix.*
+*.scvd
+*.crf
+*.d
+*.o
+*.hex
+*.bin
+*.axf
+*.htm
+*.lnp
+*.map
+*.dep
+*.bak
+*.lst
+*.iex
+
+# IDE / OS
+.vscode/
+*.suo
+*.user
+*.db
+
+# Build output
+*.build_log.htm
+*.tra

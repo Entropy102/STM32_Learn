@@ -63,7 +63,11 @@ void EXTI9_5_IRQHandler(void)
     if (EXTI->PR & (1 << 5))
     {
         EXTI->PR = (1 << 5);
-        LED_RED_ON();
+        // toggle RED (PA8, active low)
+        if (GPIOA->ODR & (1 << 8))
+            LED_RED_ON();
+        else
+            LED_RED_OFF();
     }
 }
 
@@ -72,7 +76,11 @@ void EXTI15_10_IRQHandler(void)
     if (EXTI->PR & (1 << 15))
     {
         EXTI->PR = (1 << 15);
-        LED_GREEN_ON();
+        // toggle GREEN (PD2, active low)
+        if (GPIOD->ODR & (1 << 2))
+            LED_GREEN_ON();
+        else
+            LED_GREEN_OFF();
     }
 }
 

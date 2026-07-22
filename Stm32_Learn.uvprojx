@@ -341,7 +341,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\Driver;.\Hardware\KEY;.\Hardware\LED;.\Hardware\EXIT0</IncludePath>
+              <IncludePath>.\Driver;.\Hardware\KEY;.\Hardware\LED;.\Hardware\EXTI0</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -416,14 +416,14 @@
               <FilePath>.\Hardware\LED\led.h</FilePath>
             </File>
             <File>
-              <FileName>exit0.c</FileName>
+              <FileName>exti0.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Hardware\EXIT0\exit0.c</FilePath>
+              <FilePath>.\Hardware\EXTI0\exti0.c</FilePath>
             </File>
             <File>
-              <FileName>exit0.h</FileName>
+              <FileName>exti0.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\Hardware\EXIT0\exit0.h</FilePath>
+              <FilePath>.\Hardware\EXTI0\exti0.h</FilePath>
             </File>
           </Files>
         </Group>

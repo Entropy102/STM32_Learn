@@ -1,6 +1,13 @@
 #include "exti0.h"
 #include "led.h"
 
+/* 中断操作流程：配置中断线，将GPIO端口对应的中断线
+	告诉EXTI允许哪几条线产生中断，且每条线是什么边沿下产生中断
+	EXTI向NVIC发出中断请求，由NVIC判断是否允许CPU产生中断
+	CPU进入中断，并执行中断处理函数
+	GPIO → EXTI → PR(硬件自动执行) → NVIC → IRQ(查表) → 中断函数 → 清PR(置1清0) → 处理事件 → 返回主程序
+*/
+
 void EXTI0_Init(void)
 {
 	// 开启AFIO

@@ -19,30 +19,6 @@ int main(void)
 
     while(1)
     {
-		
-			/*if(Key_Wk_Up())
-			{
-				LED_GREEN_ON();
-				LED_RED_ON();
-			}else if(Key_Key_0())
-			{
-				LED_RED_ON();
-			}else if(Key_Key_1())
-			{
-				LED_GREEN_ON();
-			}else 
-			{
-				LED_GREEN_OFF();
-				LED_RED_OFF();
-			}
-			if(Key_Key_0())
-			{
-				count ++;
 
-				delay_ms(200);
-			}*/
-		
-		
-			
     }
 }
